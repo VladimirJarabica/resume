@@ -6,7 +6,7 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Vladimír Jarabica</title>
-    <style>
+    <style type="text/tailwindcss">
       html,
       body {
         margin: 0;
@@ -14,12 +14,19 @@
         p {
           margin-bottom: 1rem;
         }
+
+        .tech-stack {
+          &::before {
+            content: "#";
+            color: theme(colors.stone.400);
+          }
+        }
       }
     </style>
   </head>
   <body class="bg-gray-100 text-gray-900 font-mono">
     <div
-      class="max-w-5xl mx-auto p-8 bg-stone-50 m-10 border border-stone-200 rounded-xs"
+      class="max-w-5xl mx-auto p-8 bg-stone-50 m-10 border border-stone-200 rounded-xs shadow"
     >
       <h1 class="text-2xl font-bold mb-1">Vladimír Jarabica</h1>
       <a href="mailto:vladojarabica@gmail.com" class="underline text-base"
@@ -29,12 +36,96 @@
         <div class="flex-1 flex flex-col pr-8">
           <div class="font-bold text-lg mb-2">About</div>
           <div class="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua.
+            <p>
+              Fullstack engineer enjoying complex challenges, clean product
+              vision and building systems from scratch. Experienced in remote
+              work, cross-team collaboration, and leading technical teams.
+            </p>
+            <p>
+              Currently holding the steering wheel of AI to increase
+              productivity without compromising the quality.
+            </p>
+            <p>Working remotely from 🇸🇰</p>
+            <p>
+              But also a father, EV enthusiast, accordion player and a lot more.
+            </p>
+          </div>
+          <div class="font-bold text-lg my-2">Tech stack</div>
+          <div class="flex gap-x-2 flex-wrap mb-2">
+            <div class="tech-stack">typescript</div>
+            <div class="tech-stack">react</div>
+            <div class="tech-stack">next.js</div>
+            <div class="tech-stack">SSR</div>
+            <div class="tech-stack">tailwind</div>
+            <div class="tech-stack">graphql</div>
+            <div class="tech-stack">postgres</div>
+            <div class="tech-stack">redis</div>
+            <div class="tech-stack">sql</div>
+            <div class="tech-stack">claude code</div>
+            <div class="tech-stack">ab testing</div>
+            <div class="tech-stack">git</div>
+            <div class="tech-stack">react_native</div>
+            <div class="tech-stack">prisma</div>
+            <div class="tech-stack">trpc</div>
+            <div class="tech-stack">sass</div>
+          </div>
+          <div class="font-bold text-lg my-2">Personal project</div>
+          <div class="text-sm relative">
+            <div class="flex flex-col mb-2">
+              <div class="flex justify-between">
+                <a
+                  class="font-semibold underline"
+                  href="https://www.helinotes.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Helinotes</a
+                >
+              </div>
+            </div>
+            <div class="">
+              <p>
+                A free platform for the community of Slovak (and beyond)
+                diatonic accordion players. Built on modern tech, yet serving
+                traditional people with a love for music, folklore, and
+                heritage.
+              </p>
+            </div>
+          </div>
+          <div class="font-bold text-lg my-2">Education</div>
+          <div class="text-sm relative">
+            <div class="flex flex-col mb-2">
+              <div class="flex justify-between">
+                <a
+                  class="font-semibold underline"
+                  href="https://www.muni.cz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Masarykova Univerzita</a
+                >
+                <span class="text-stone-600 text-xs">2014 - 2018</span>
+              </div>
+            </div>
+            <div>
+              <p>Bachelor's degree ● Applied Informatics</p>
+            </div>
+          </div>
+          <div class="font-bold text-lg my-2">Socials</div>
+          <div class="flex gap-x-2 flex-wrap mb-2">
+            <a
+              href="mailto:vladojarabica@gmail.com"
+              class="tech-stack underline"
+              >email</a
+            >
+            <a
+              href="https://github.com/VladimirJarabica"
+              class="tech-stack underline"
+              >github</a
+            >
+            <a
+              href="https://www.linkedin.com/in/vladimir-jarabica/"
+              class="tech-stack underline"
+              >linkedin</a
+            >
           </div>
         </div>
         <div class="flex-1 flex flex-col">
